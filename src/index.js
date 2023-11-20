@@ -71,12 +71,12 @@ async function loadMore() {
   const data = await getImages(value, page);
   let cardsMarkup = renderImages(data.hits);
   gallery.insertAdjacentHTML('beforeend', cardsMarkup);
-  button.style.display = 'block';
   if (data.hits.length === 0) {
     Notiflix.Notify.warning(
       "We're sorry, but you've reached the end of search results."
     );
     return;
   }
+  button.style.display = 'block';
   page++;
 }
