@@ -12,7 +12,8 @@ const API_KEY = '40778765-86fa5418ec3c51ba5231bc1ca';
 
 const BASE_URL = 'https://pixabay.com/api/';
 
-// Не зміг
+// Не зміг зробити запит через axios, свариться CROS, No 'Access-Control-Allow-Origin'
+//
 // export const getImages = async param => {
 //   try {
 //     const responce = await queryBuilder.get('', {
